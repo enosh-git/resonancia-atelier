@@ -1,0 +1,55 @@
+:root {
+  --Primary-Default: #5C0E17;
+  --primary-light-hover: #7C0C1C;
+  --Background-Secondary: #FFFCF4;
+  --Background-Neutral: #F4F4F2;
+  --Border-Divider: #E0DEDA;
+  --Text-Heading: #7C0C1C;
+  --Text-Body: #5C5C5C;
+  --font-heading: 'Prata', serif;
+  --font-body: 'Josefin Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+.header-logo {
+  background-color: var(--Primary-Default);
+  width: 100%;
+  height: 136.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerLogo {
+  width: 305px;
+  height: 101.667px;
+  aspect-ratio: 3/1;
+}
+
+.navList {
+  width: 100%;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 114px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--Background-Secondary);
+}
+
+.navList li {
+  list-style-type: none;
+}
+
+.navList a {
+  text-decoration: none;
+  color: var(--Text-Body);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+}
