@@ -10,16 +10,21 @@
     <title>Resonancia Atelier</title>
   </head>
   <body>
-      <header class="header">
+      <header class="site-header">
         <div class="header-logo">
-          <a href="index.html">
-            <img src="img/logo.png" alt="Resonancia Atelier Logo" class="headerLogo">
-          </a>
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+            <span class="nav-toggle__bar"></span>
+          </button>
+
+          <img src="img/logo.png" alt="Resonancia Atelier" class="headerLogo">
         </div>
 
-        <nav class="nav">
+        <!-- Desktop nav row, hidden on mobile -->
+        <nav class="site-nav" aria-label="Main navigation">
           <ul class="navList">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html" aria-current="page">Home</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="services.html">Services</a></li>
             <li><a href="about.html">About</a></li>
@@ -27,6 +32,18 @@
           </ul>
         </nav>
       </header>
+
+      <!-- Mobile overlay menu, hidden until opened -->
+      <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav__close" id="navClose" aria-label="Close menu">&times;</button>
+        <ul class="mobile-nav__list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
 
       <main>
         <!-- Hero section -->
@@ -48,8 +65,23 @@
                 </svg>
               </button>
             </div>
-
          </section>
+
+         <!-- About intro section -->
+          <section class="aboutIntro">
+            <div class="intro__quote">
+              <h1>"Architecture with meaning. <br>
+                Design with intention. <br>
+                Spaces that resonate."</h1>
+            </div>
+            
+            <div class="intro__divider"></div>
+
+            <div class="intro__description">
+              <p>Resonancia Atelier is an architectural and design studio founded on the belief that meaningful spaces do more than occupy a place, they resonate...</p>
+              <a href="about.html" class="intro__link"><span class="intro__link-underline">Learn</span>&nbsp;More</a>
+            </div>
+          </section>
 
       </main>
       <script src="js/main.js"></script>
