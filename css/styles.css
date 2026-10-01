@@ -366,14 +366,16 @@ main {
 
 .mainPortfolio__slider {
   position: relative;
-  padding-bottom: 78px;
 }
 
 .mainPortfolio__viewport {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
-  ::webkit-scrollbar { display: none};
+}
+
+.mainPortfolio__viewport::-webkit-scrollbar {
+  display: none;
 }
 
 .mainPortfolio__track {
@@ -393,7 +395,7 @@ main {
   height: 189px;
   flex-shrink: 0;
   aspect-ratio: 193/189;
-  border-radius: 193px;
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -406,7 +408,8 @@ main {
   width: 275px;
   background-color: var(--Border-Divider);
   position: relative;
-  margin: 0 auto;
+  margin-top: 78px;
+  margin: 78px auto 0 auto;
 }
 
 .mainPortfolio__progress-thumb {
@@ -423,6 +426,26 @@ main {
 }
 
 @media (min-width: 768px) {
+  .mainPortfolio__viewport {
+    overflow: hidden;
+    scroll-snap-type: none;
+    padding: 0 10px 0 10px;
+  }
+
+  .mainPortfolio__track {
+    gap: 35px;
+    transition: transform 0.5s ease;
+  }
+
+  .mainPortfolio__item {
+    flex: 0 0 calc((100% - 2 * 35) / 3);
+  }
+
+  .mainPortfolio__item img {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
   .mainPortfolio__arrow {
     position: absolute;
     top: 50%;
@@ -431,7 +454,7 @@ main {
     height: 44px;
     border: none;
     border-radius: 50%;
-    background: rgba(0, 0, 0, 0.55);
+    background: var(--Border-Divider);
     color: #ffffff;
     cursor: pointer;
     display: flex;
