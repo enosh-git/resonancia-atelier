@@ -501,3 +501,91 @@ main {
   }
 }
 
+/* Main services section */
+.mainServices {
+  background-color: white;
+  width: 100%;
+}
+
+.mainServicesImageHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 41px;
+}
+
+.mainServicesImg {
+  width: 301.898px;
+  height: 155.324px;
+  aspect-ratio: 138/71;
+  margin: 0 auto;
+}
+
+.mainServicesHeading {
+  margin-top: 8.25px;
+}
+
+.mainServicesHeading h1 {
+  color: var(--Text-Heading);
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 36.22px;
+}
+
+.mainServicesLine {
+  display: block;
+  margin: 20px auto 40px auto;
+  background-color: var(--Border-Divider);
+  width: 301px;
+  height: 1px;
+}
+
+@media (min-width: 768px) {
+  .mainServicesImageHolder {
+    padding-top: 42px;
+  }
+
+  .mainServicesImg {
+    width: 88%;
+    height: 88%;
+  }
+
+  .mainServicesHeading {
+    margin-top: 28px;
+  }
+
+  .mainServicesHeading h1 {
+    margin-left: 60px;
+    font-size: 36px;
+  }
+
+  .mainServicesLine {
+    width: 88%;
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainServicesImageHolder {
+    padding-top: 74px;
+  }
+
+  .mainServicesImg {
+    width: 88%;
+    height: 88%;
+  }
+
+  .mainServicesHeading h1 {
+    margin-left: 90px;
+    font-size: 48px;
+  }
+
+  .mainServicesLine {
+    width: 88%;
+    margin-top: 38px;
+    margin-bottom: 47px;
+  }
+}
