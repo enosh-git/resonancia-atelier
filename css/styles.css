@@ -505,6 +505,7 @@ main {
 .mainServices {
   background-color: white;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .mainServicesImageHolder {
@@ -538,13 +539,17 @@ main {
 
 .mainServicesLine {
   display: block;
-  margin: 20px auto 40px auto;
+  margin: 20px auto 0 auto;
   background-color: var(--Border-Divider);
   width: 301px;
   height: 1px;
 }
 
 @media (min-width: 768px) {
+  .mainServices {
+    padding-bottom: 42px;
+  }
+
   .mainServicesImageHolder {
     padding-top: 42px;
   }
@@ -565,11 +570,14 @@ main {
 
   .mainServicesLine {
     width: 88%;
-    margin-bottom: 42px;
   }
 }
 
 @media (min-width: 1024px) {
+  .mainServices {
+    margin-bottom: 47px;
+  }
+
   .mainServicesImageHolder {
     padding-top: 74px;
   }
@@ -587,6 +595,24 @@ main {
   .mainServicesLine {
     width: 88%;
     margin-top: 38px;
-    margin-bottom: 47px;
   }
+}
+
+/* Main About section */
+.mainAbout {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.mainAboutImageHolder {
+  display: flex;
+  justify-content: center;
+}
+
+.mainAboutImg {
+  width: 220px;
+  height: 288px;
+  border-radius: 5px;
+  box-shadow: 0 4px 9.1px 1px rgba(0, 0, 0, 0.25);
 }
