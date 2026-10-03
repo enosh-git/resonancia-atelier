@@ -602,7 +602,7 @@ main {
 .mainAbout {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  margin-top: 46px;
 }
 
 .mainAboutImageHolder {
@@ -615,4 +615,127 @@ main {
   height: 288px;
   border-radius: 5px;
   box-shadow: 0 4px 9.1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.mainAbout__content {
+  text-align: center;
+  margin-top: 42px;
+}
+
+.mainAbout__content h1 {
+  color: var(--Text-Heading);
+  font-family: var(--font-heading);
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainAbout__content h2 {
+  padding-top: 23px;
+  color: var(--Text-Heading);
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mainAboutline {
+  background-color: var(--Border-Divider);
+  height: 1px;
+  width: 80%;
+  display: block;
+  margin: 34px auto 0 auto;
+}
+
+.mainAbout__content p {
+  color: var(--Text-Body);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  padding: 29px 45px 30px 48px;
+}
+
+/* Main About tablet viewport */
+@media (min-width: 768px) {
+  .mainAbout {
+    display: flex;
+    flex-direction: row;
+    margin-top: 99.76px;
+    padding-bottom: 98.72px;
+  }
+
+  .mainAboutImageHolder {
+    padding-left: 66.47px;
+  }
+
+  .mainAboutImg {
+    width: 247.73px;
+    height: 324.523px;
+  }
+
+  .mainAbout__content {
+    margin-top: 0;
+  }
+
+  .mainAbout__content h1 {
+    font-size: 48px;
+  }
+
+  .mainAbout__content h2 {
+    font-size: 36px;
+    padding-top: 30px;
+  }
+
+  .mainAboutline {
+    width: 66%;
+    margin-top: 25px;
+  }
+
+  .mainAbout__content p {
+    padding: 15px 29px 0 50.8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mainAbout {
+    display: flex;
+    flex-direction: row;
+    margin-top: 39.69px;
+    padding-bottom: 38.65px;
+  }
+
+  .mainAboutImageHolder {
+    padding-left: 185.75px;
+  }
+
+  .mainAboutImg {
+    width: 300px;
+    height: 405px;  
+  }
+
+  .mainAbout__content {
+    margin-top: 65px;
+  }
+
+  .mainAboutline {
+    width: 71%;
+    margin-top: 28px;
+  }
+
+  .mainAbout__content h2 {
+    padding-top: 10px;
+  }
+
+  .mainAbout__content p {
+    padding: 33px 14% 0 14%;
+  }
 }
