@@ -66,3 +66,24 @@ slider.addEventListener('mouseenter', stopAutoSlide);
 slider.addEventListener('mouseleave', startAutoSlide);
 
 startAutoSlide();
+
+
+/* Main portfolio: progress bar (mobile) */
+const portfolioViewport = document.querySelector('.mainPortfolio__viewport');
+const portfolioThumb = document.querySelector('.mainPortfolio__progress-thumb');
+const portfolioItems = document.querySelectorAll('.mainPortfolio__item');
+
+if (portfolioViewport && portfolioThumb && portfolioItems.length) {
+  // Thumb width = one item's share of the track (5 items -> 20%)
+  portfolioThumb.style.width = `${100 / portfolioItems.length}%`;
+
+  portfolioViewport.addEventListener('scroll', () => {
+    const maxScroll = portfolioViewport.scrollWidth - portfolioViewport.clientWidth;
+    const progress = maxScroll > 0 ? portfolioViewport.scrollLeft / maxScroll : 0;
+
+    // translateX % is relative to the thumb's own width,
+    // so it can travel (items - 1) thumb-widths
+    const travel = (portfolioItems.length - 1) * 100;
+    portfolioThumb.style.transform = `translateX(${progress * travel}%)`;
+  });
+}
