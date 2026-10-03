@@ -87,3 +87,53 @@ if (portfolioViewport && portfolioThumb && portfolioItems.length) {
     portfolioThumb.style.transform = `translateX(${progress * travel}%)`;
   });
 }
+
+/* Main portfolio: arrow slider (tablet and desktop, looping) */
+const portfolioSection = document.querySelector('.mainPortfolio');
+const portfolioTrack = document.querySelector('.mainPortfolio__track');
+const portfolioPrev = document.getElementById('portfolioPrev');
+const portfolioNext = document.getElementById('portfolioNext');
+const mobileQuery = window.matchMedia('(max-width: 767px)');
+
+let portfolioIndex = 0;
+
+function getVisibleCount() {
+  const value = getComputedStyle(portfolioSection).getPropertyValue('--portfolio-visible');
+  return parseInt(value, 10) || 1;
+}
+
+function getLastIndex() {
+  const items = portfolioTrack.querySelectorAll('.mainPortfolio__item');
+  return Math.max(items.length - getVisibleCount(), 0);
+}
+
+function updatePortfolioSlider() {
+  // On mobile the viewport scrolls by swiping, so no transform
+  if (mobileQuery.matches) {
+    portfolioTrack.style.transform = '';
+    return;
+  }
+
+  const items = portfolioTrack.querySelectorAll('.mainPortfolio__item');
+  const step = items[1].offsetLeft - items[0].offsetLeft; // item width + gap
+  portfolioTrack.style.transform = `translateX(-${portfolioIndex * step}px)`;
+}
+
+if (portfolioSection && portfolioTrack && portfolioPrev && portfolioNext) {
+  portfolioNext.addEventListener('click', () => {
+    portfolioIndex = portfolioIndex >= getLastIndex() ? 0 : portfolioIndex + 1;
+    updatePortfolioSlider();
+  });
+
+  portfolioPrev.addEventListener('click', () => {
+    portfolioIndex = portfolioIndex <= 0 ? getLastIndex() : portfolioIndex - 1;
+    updatePortfolioSlider();
+  });
+
+  // The visible count can change when the screen resizes, so start over
+  window.addEventListener('resize', () => {
+    portfolioIndex = 0;
+    portfolioViewport.scrollLeft = 0;
+    updatePortfolioSlider();
+  });
+}
