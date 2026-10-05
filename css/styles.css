@@ -775,6 +775,7 @@ footer {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  text-align: center;
 }
 
 .siteFooter__contact {
@@ -828,5 +829,20 @@ footer {
 
   .siteFooter__copyright {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px){
+  .siteFooter__logo {
+    width: 199px;
+    height: 66px;
+  }
+
+  .siteFooter__navList {
+    gap: 132px;
+  }
+
+  .siteFooter__divider {
+    width: 27%;
   }
 }
