@@ -791,3 +791,42 @@ footer {
 .siteFooter__copyright {
   padding: 5px;
 }
+
+@media (min-width: 768px) {
+  .siteFooter__logo {
+    width: 145px;
+    height: 48px;
+  }
+
+  .siteFooter__nav {
+    display:block;
+    margin-top: 21px;
+  }
+  
+  .siteFooter__navList {
+    display: flex;
+    gap: 60px;
+  }
+
+  .siteFooter__navList li {
+    list-style-type: none;
+  }
+
+  .siteFooter__navList a {
+    color: var(--Background-Secondary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+  }
+
+  .siteFooter__divider {
+    width: 26%;
+  }
+
+  .siteFooter__copyright {
+    font-size: 16px;
+  }
+}
