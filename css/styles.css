@@ -856,13 +856,13 @@ footer {
 
 
 /* Portfolio Main Section */
-.portfolioIntro {
+.pageIntro {
   text-align: center;
   padding-top: 63px;
   padding-bottom: 63px;
 }
 
-.portfolioIntro h1 {
+.pageIntro h1 {
   color: var(--Primary-Default);
   font-family: var(--font-heading);
   font-size: 36px;
@@ -871,7 +871,7 @@ footer {
   line-height: normal;
 }
 
-.portfolioIntro__divider {
+.pageIntro__divider {
   background-color: var(--Border-Divider);
   width: 80%;
   height: 1px;
@@ -916,7 +916,7 @@ footer {
 }
 
 @media (min-width: 768px) {
-  .portfolioIntro h1 {
+  .pageIntro h1 {
     font-size: 48px;
   }
 
@@ -973,7 +973,7 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  .portfolioIntro h1 {
+  .pageIntro h1 {
     font-size: 64px;
   }
 }
