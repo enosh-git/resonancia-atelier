@@ -977,3 +977,168 @@ footer {
     font-size: 64px;
   }
 }
+
+/* Services Page Styling */
+
+.service {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.service--reverse {
+  background-color: #ffffff;
+}
+
+.service__inner {
+  display: grid;
+  gap: 30px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.service__title {
+  color: var(--primary-light-hover, #7C0C1C);
+  font-family: var(--font-heading);
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.service__image {
+  width: 100%;
+  display: block;
+  height: auto;
+  aspect-ratio: 160/123;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.service__body {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.service__quote {
+  color: var(--primary-light-hover, #7C0C1C);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 31px;
+}
+
+.service__details {
+  color: var(--Text-Body);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service__description {
+  text-align: left;
+  padding-bottom: 11px;
+}
+
+.service__divider {
+  background-color: var(--Border-Divider);
+  width: 99%;
+  height: 1px;
+}
+
+.service__list {
+  font-size: 11.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 15px;
+  padding-top: 11px;
+  padding-bottom: 28px;
+}
+
+.service__column {
+  list-style: none;
+  padding-left: 0;
+}
+
+.service__column li {
+  position: relative;
+  text-align: left;
+}
+
+.service__column li::before {
+  content: "•";
+  /* position: absolute;
+  left: -10px; */
+  color: inherit;
+  margin-right: 1px;  
+}
+
+.ctaBanner {
+  margin-top: -25px;
+  background-image: url("../img/cta__mobile.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 270px;
+  display: grid;
+  place-items: center;
+  padding: 0 82px;
+}
+
+.ctaBanner__card {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 122px;
+  width: 209px;
+}
+
+.ctaBanner__card h2 {
+  color: var(--Background-Secondary);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ctaBanner__card p {
+  color: #FFFCF4;
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.ctaBanner__card a {
+  text-decoration: none;
+  color: var(--primary-light-hover, #7C0C1C);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: #FFFCF4;
+  margin-top: 17px;
+  padding: 9px 26px;
+}
