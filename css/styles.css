@@ -1740,3 +1740,155 @@
   }
 
 }
+
+@media (min-width: 1024px) {
+  .aboutParagraph {
+    font-size: 16px;
+     width: 785px;
+     text-align: center;
+  }
+
+  .aboutParagraph p {
+    padding-bottom: 60px;
+  }
+
+  .aboutQuote {
+    width: 1152px;
+    margin-left: 6%;
+    margin-bottom: 100px;
+  }
+
+  .aboutQuote__text {
+    font-size: 36px;
+    text-align: center;
+    width: 1152px;
+  }
+
+  .aboutQuote__text::before {
+    content:"\“";
+    font-size: 200px;
+    position: absolute;
+    top: -58px;
+    left: 80px;
+  }
+
+  .aboutHighlightImageHolder {
+    padding-top: 60px;
+  }
+
+  .aboutHighlight__image {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    aspect-ratio: 179/101;
+  }
+
+  .aboutOwner {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  .aboutOwnerImageHolder {
+    padding-left: 143px;
+  }
+  
+  .aboutOwnerImage {
+    width: 397px;
+    height: 521px;
+    aspect-ratio: 16/21;
+    margin-top: 40px;
+  }
+
+  .aboutOwner__content {
+    margin-top: -20px;
+  }
+
+  .aboutOwner__content h1 {
+    font-size: 48px;
+  }
+
+  .aboutOwner__content h2 {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+
+  .aboutOwnerline {
+    width: 75%;
+    height: 1px;
+    margin-bottom: 38px;
+  }
+
+  .aboutOwnerDetails {
+    width: 65%;
+    font-size: 16px;
+  }
+
+  .aboutMissionVision {
+    background-image: url("../img/aboutBannerDesktop.png");
+    padding-top: 88px;
+    padding-bottom: 10px;
+  }
+
+  .aboutMV__container {
+    display: flex;
+    flex-direction: row;
+    margin-right: 120px;
+  }
+
+  .aboutMV__paragraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-top:5px;
+    gap: 15px;
+  }
+
+  .aboutMV__paragraph2 {
+    margin-left: 95px;
+    margin-right: 38px;
+  }
+
+  .aboutMV__content {
+    color: #fff;
+    width: 100%;
+    margin: 0  auto;
+  }
+
+  .aboutMV__content h1 {
+    font-size: 48px;
+    margin-bottom: 75px;
+    margin-left: 180px;
+  }
+
+  .aboutMV__content p {
+    width: 80%;
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .aboutMV__divider {
+    width: 85%;
+    height: 0.5px;
+    background-color: #FFFCF4;
+    margin: 20px auto 35px auto;
+  }
+
+  .aboutCTA h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .aboutCTA p {
+    font-size: 16px;
+    margin-bottom: 74px;
+  }
+
+  .aboutCTA a {
+    font-size: 14px;
+    margin-top: 17px;
+    padding: 20px 50px;
+  }
+}
