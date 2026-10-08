@@ -50,6 +50,70 @@
 
     <!-- main -->
     <main>
+      <!-- Contact page introduction -->
+      <section class="contactIntro">
+        <h1 class="contactIntroHeading">Let's start a conversation</h1>
+        <div class="contactIntroDivider"></div>
+      </section>
+
+      <!-- Contact page links -->
+      <section class="contactLinks">
+        <div class="contactSocialLinks">
+          <h2>Social Media</h2>
+          <a href="#"><img src="img/fbIcon.svg" alt="Facebook Icon"></a>
+          <a href="#"><img src="img/igIcon.svg" alt="Instagram Icon"></a>
+          <a href="#"><img src="img/threadsIcon.svg" alt="Threads app icon"></a>
+        </div>
+
+        <div class="contactNumberLinks">
+          <h2>Number</h2>
+          <a href="#"><img src="img/whatsAppIcon.svg" alt="WhatsApp icon"></a>
+          <a href="#"><img src="img/viberIcon.svg" alt="Viber app icon"></a>
+        </div>
+
+        <div class="contactEmailLinks">
+          <h2>Email</h2>
+          <a href="#"><img src="img/gmailIcon.svg" alt="Gmail icon"></a>
+          <a href="#"><img src="img/outlookIcon.svg" alt="Outlook icon"></a>
+        </div>
+      </section>
+
+      <!-- Contact banner section -->
+      <section class="contactBanner">
+          <img src="img/contactBanner.png" alt="A modern two-story duplex with a concrete facade, black horizontal slatted gates, and upper balconies with glass railings under a partly cloudy sky.">
+      </section>
+
+      <!-- Contact Form Section -->
+       <section class="contactFormSection">
+        <div class="contactFormIntro">
+          <h2>Tell us about your project, and we'll get back within 48 hours.</h2>
+        </div>
+
+        <form class="contactForm" action="#" method="post">
+          <label for="fullName" class="visually-hidden">Full name</label>
+          <input type="text" id="fullName" name="fullName" placeholder="Full name" required>
+
+          <label for="email" class="visually-hidden">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+
+          <label for="mobileNum" class="visually-hidden">Mobile Number</label>
+          <input type="tel" id="mobileNum" name="mobileNum" placeholder="Mobile Number" required>
+
+          <label for="serviceType" class="visually-hidden">Service type</label>
+          <select id="serviceType" name="serviceType" required>
+            <option value="" disabled selected>Service Type</option>
+            <option value="Architectural Design">Architectural Design</option>
+            <option value="Interior Architecture &amp; Design">Interior Architecture &amp; Design</option>
+            <option value="3D Visualization">3D Visualization</option>
+          </select>
+
+          <label for="description" class="visually-hidden">Tell us about your project</label>
+          <textarea name="description" id="description" placeholder="Tell us about your project..." rows="6"></textarea>
+          <!-- <div class="buttonArea"> -->
+            <button type="submit">Submit</button>
+          <!-- </div> -->
+        </form>
+       </section>
 
     </main>
 
