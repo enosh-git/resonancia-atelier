@@ -1371,3 +1371,221 @@
     }
 
   }
+
+  /* About page section */
+.aboutStory {
+  margin-top: -18px;
+}
+
+.aboutParagraph {
+  width: 80%;
+  color: var(--Text-Body, #5C5C5C);
+  text-align: center;
+  font-family: "Josefin Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+.aboutParagraph p {
+  padding-bottom: 35px;
+  text-align: center;
+}
+
+.aboutImageBanner {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.aboutHighlight {
+  background-color: #fff;
+  padding-top: 47px;
+  padding-bottom: 57px;
+}
+
+.aboutQuote {
+  width: 250px;
+  height: 109px;
+  margin-left: 17%;
+  position: relative;
+}
+
+.aboutQuote__text {
+  color: var(--primary-light-hover, #7C0C1C);
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.aboutQuote__text::before {
+  content:"\“";
+  font-size: 80px;
+  position: absolute;
+  top: -23px;
+  left: -30px;
+}
+
+.aboutHighlightImageHolder {
+  padding-top: 34px;
+  text-align: center;
+}
+
+.aboutHighlight__image {
+  width: 85%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.aboutOwner {
+  padding-top: 50px;
+  padding-bottom: 36px;
+}
+
+.aboutOwnerImageHolder {
+  text-align: center;
+  padding-bottom: 52px;
+}
+
+.aboutOwnerImage {
+  width: 45.07%;
+  aspect-ratio: 169 / 221;
+  border-radius: 5px;
+  box-shadow: 0 4px 9.1px 1px rgba(0, 0, 0, 0.25);
+}
+
+.aboutOwner__content h1, .aboutOwner__content h2 {
+  color: var(--primary-light-hover, #7C0C1C);
+  text-align: center;
+  font-family: var(--font-heading);
+}
+
+.aboutOwner__content h1 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 18px;
+}
+
+.aboutOwner__content h2 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 52px;
+}
+
+.aboutOwnerline {
+  width: 80%;
+  height: 1px;
+  background-color: var(--Border-Divider);
+  margin-bottom: 52px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutOwnerDetails {
+  width: 75%;
+  margin: 0 auto;
+  color: var(--Text-Body, #5C5C5C);
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.aboutOwnerDetails p {
+  margin-bottom: 20px;
+}
+
+.aboutMissionVision {
+  background-image: url("../img/aboutBannerMobile.png");
+  aspect-ratio: 28/25;
+  padding-top: 46px;
+  padding-bottom: 46px;
+}
+
+.aboutMV__content {
+  color: #fff;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.aboutMV__content h1 {
+  font-family: var(--font-heading);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutMV__content p {
+  width: 88%;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  margin-bottom:10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.aboutMV__divider {
+  width: 90%;
+  height: 0.5px;
+  background-color: #FFFCF4;
+  margin: 25px auto 30px auto;
+}
+
+.aboutCTA {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.aboutCTA h2 {
+  color: var(--primary-light-hover, #7C0C1C);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.aboutCTA p {
+  color: var(--Text-Body, #5C5C5C);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.aboutCTA a {
+  text-decoration: none;
+  color: var(--Background-Secondary);
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  background: var(--Primary-Default);
+  margin-top: 17px;
+  padding: 14px 28px;
+}
