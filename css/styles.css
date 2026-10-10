@@ -545,7 +545,7 @@
     margin-top: 8.25px;
   }
 
-  .mainServicesHeading h1 {
+  .mainServicesHeading a {
     color: var(--Text-Heading);
     font-family: var(--font-heading);
     font-size: 24px;
@@ -554,6 +554,7 @@
     line-height: normal;
     margin-left: 36.22px;
     text-transform: capitalize;
+    text-decoration: none;
   }
 
   .mainServicesLine {
@@ -582,7 +583,7 @@
       margin-top: 28px;
     }
 
-    .mainServicesHeading h1 {
+    .mainServicesHeading a {
       margin-left: 60px;
       font-size: 36px;
     }
@@ -606,7 +607,7 @@
       height: 88%;
     }
 
-    .mainServicesHeading h1 {
+    .mainServicesHeading a {
       margin-left: 90px;
       font-size: 48px;
     }
