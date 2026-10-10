@@ -1506,6 +1506,11 @@
 
 .aboutMissionVision {
   background-image: url("../img/aboutBannerMobile.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 375px;
   aspect-ratio: 28/25;
   padding-top: 46px;
   padding-bottom: 46px;
